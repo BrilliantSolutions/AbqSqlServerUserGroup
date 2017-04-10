@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceBusinessObjects", "SalesforceBusinessObjects\SalesforceBusinessObjects.csproj", "{8ED00985-01F7-434C-91F3-A6E1E9279094}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{41A98E89-D75B-48F2-812C-987962EED0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41A98E89-D75B-48F2-812C-987962EED0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41A98E89-D75B-48F2-812C-987962EED0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED00985-01F7-434C-91F3-A6E1E9279094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED00985-01F7-434C-91F3-A6E1E9279094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED00985-01F7-434C-91F3-A6E1E9279094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED00985-01F7-434C-91F3-A6E1E9279094}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
