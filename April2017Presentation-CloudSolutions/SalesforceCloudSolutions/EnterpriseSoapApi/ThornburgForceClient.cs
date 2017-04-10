@@ -36,7 +36,14 @@ namespace EnterpriseSoapApi
                 ? tokenRequestEndpointSandboxUrl
                 : tokenRequestEndpointProductionUrl;
 
-            await auth.UsernamePasswordAsync(consumerKey, consumerSecret, username, password, tokenRequestEndpointUrl);
+            try
+            {
+                await auth.UsernamePasswordAsync(consumerKey, consumerSecret, username, password, tokenRequestEndpointUrl);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
             Console.WriteLine(value: "Connected to Salesforce");
 
             return new ForceClient(auth.InstanceUrl, auth.AccessToken, auth.ApiVersion);

@@ -68,7 +68,7 @@
     <Compile Include="ThornburgForceClient.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="readme.md" />
     <None Include="Service References\salesforceService\EnterpriseSoapApi.salesforceService.convertLeadResponse.datasource">

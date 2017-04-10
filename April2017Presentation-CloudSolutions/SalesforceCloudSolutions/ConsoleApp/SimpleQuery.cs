@@ -5,6 +5,7 @@ using SalesforceBusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,13 @@ namespace ConsoleApp
 
             Console.WriteLine();
             Console.WriteLine();
+
+
+            using (SqlConnection sqlConnection = new SqlConnection())
+            {
+                sqlConnection.Open();
+            }
+
 
             //Console.WriteLine(value: "Add records:");
 
