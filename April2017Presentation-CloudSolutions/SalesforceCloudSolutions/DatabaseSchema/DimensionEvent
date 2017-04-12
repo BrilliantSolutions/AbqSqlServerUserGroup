@@ -1,10 +1,7 @@
-CREATE TABLE [Dimension].[Event](
-	[EventIDSK] [bigint] IDENTITY(1,1) NOT NULL,
-	[EventIDAK] [varchar](500) NULL,
-	[Subject] [varchar](500) NULL,
-	[ActivityDateSK] [Date] NULL,
-	[FirstName] [varchar](500) NULL,
-	[LastName] [varchar](500) NULL,
-	[RepSalesForceID] [varchar](500) NULL,
-	[RepresentativeIDSK] [bigint] NULL
+  CREATE TABLE [Dimension].[Event](
+       [EventKey] [int] identity,
+       [Subject] [nvarchar](500) NULL,
+       [Description] nvarchar(500) null,
+       [ActivityDate] [Date] NULL,
+       [WhoID] nvarchar(255) null
 )
