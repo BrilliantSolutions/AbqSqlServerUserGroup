@@ -1,0 +1,21 @@
+
+ALTER PROCEDURE ProcessETL
+AS 
+
+TRUNCATE TABLE [DIMENSION].[EVENT];
+
+INSERT INTO [DIMENSION].[EVENT] ([EventKey], [Subject], [Description], [ActivityDate], [WhoID])
+SELECT [ID], [Subject], [Description], cast([ActivityDate] as date), [WhoID] FROM [INTEGRATION].[EVENT]; 
+  
+
+ UPDATE [DIMENSION].[CUSTOMER] SET SalesForceID = ic.id
+	 FROM [INTEGRATION].[CONTACT] ic
+ JOIN [DIMENSION].[CUSTOMER] dc
+	 ON dc.[primary contact] = ic.firstname +' ' + ic.lastname;
+
+UPDATE [DIMENSION].[CUSTOMER] 
+set salesforceid = newid() 
+from dimension.customer WHERE salesforceid is null
+
+TRUNCATE TABLE [INTEGRATION].[CONTACT];
+TRUNCATE TABLE [INTEGRATION].[EVENT];
