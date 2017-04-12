@@ -1,0 +1,1 @@
+ALTER TABLE [DIMENSION].[CUSTOMER]  ADD	[SalesForceID] [nvarchar](255) NULL
