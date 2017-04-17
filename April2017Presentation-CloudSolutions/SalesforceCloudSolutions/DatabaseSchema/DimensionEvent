@@ -1,0 +1,7 @@
+  CREATE TABLE [Dimension].[Event](
+       [EventKey] [int] identity,
+       [Subject] [nvarchar](500) NULL,
+       [Description] nvarchar(500) null,
+       [ActivityDate] [Date] NULL,
+       [WhoID] nvarchar(255) null
+)

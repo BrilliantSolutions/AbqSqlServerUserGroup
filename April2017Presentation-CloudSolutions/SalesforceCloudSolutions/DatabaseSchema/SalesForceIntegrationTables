@@ -1,0 +1,17 @@
+CREATE TABLE Integration.Event (
+ID nvarchar(255),
+[Subject] nvarchar(500),
+ActivityDate nvarchar(255)
+  )
+
+CREATE TABLE Integration.EventRelation (
+AccountID nvarchar(255),
+RelationID nvarchar(255)
+)
+
+
+CREATE TABLE Integration.Contact (
+ID nvarchar(255),
+FirstName nvarchar(255),
+LastName nvarchar(255)
+)
